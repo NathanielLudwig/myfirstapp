@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G22010" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="My_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ALV-cD-NM8">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to my app" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taI-1J-rYI">
+                                        <rect key="frame" x="131.33333333333331" y="0.0" width="151.33333333333331" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="LlH-WK-y1X">
+                                        <rect key="frame" x="0.0" y="20.333333333333314" width="414" height="612.33333333333326"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="PGH-zj-Kv8">
+                                        <rect key="frame" x="0.0" y="632.66666666666652" width="414" height="103.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="njo-wt-pvS">
+                                                <rect key="frame" x="0.0" y="0.0" width="103.66666666666667" height="103.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="njo-wt-pvS" secondAttribute="height" multiplier="1:1" id="DFC-Na-W3H"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="noun_Home_1929683">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hzf-8V-4C6"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlh-1Y-lVR">
+                                                <rect key="frame" x="103.66666666666669" y="0.0" width="103.33333333333331" height="103.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="zlh-1Y-lVR" secondAttribute="height" multiplier="1:1" id="sVY-RG-aZe"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="noun_person_924847">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="buttonTwo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J7M-d9-P6r"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMU-8e-xcB">
+                                                <rect key="frame" x="207.00000000000003" y="0.0" width="103.66666666666671" height="103.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="cMU-8e-xcB" secondAttribute="height" multiplier="1:1" id="LNt-SM-K9e"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="noun_Playstation 4 Control_1914407"/>
+                                                <connections>
+                                                    <action selector="buttonThree:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OOP-Qp-b9n"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y9z-IE-6rz">
+                                                <rect key="frame" x="310.66666666666674" y="0.0" width="103.33333333333331" height="103.33333333333337"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="y9z-IE-6rz" secondAttribute="height" multiplier="1:1" id="QBI-sG-VLK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="noun_Cat_159325"/>
+                                                <connections>
+                                                    <action selector="buttonFour:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6b6-Rf-DSx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="PGH-zj-Kv8" firstAttribute="leading" secondItem="ALV-cD-NM8" secondAttribute="leading" id="3nR-RC-Xje"/>
+                                    <constraint firstAttribute="trailing" secondItem="PGH-zj-Kv8" secondAttribute="trailing" id="5vy-xa-bZb"/>
+                                    <constraint firstItem="taI-1J-rYI" firstAttribute="top" secondItem="ALV-cD-NM8" secondAttribute="top" constant="20" id="lON-5w-Y7t"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALV-cD-NM8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Amj-1x-aKH"/>
+                            <constraint firstItem="ALV-cD-NM8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="efI-MG-9un"/>
+                            <constraint firstAttribute="trailing" secondItem="ALV-cD-NM8" secondAttribute="trailing" id="lIJ-ak-veo"/>
+                            <constraint firstAttribute="bottom" secondItem="ALV-cD-NM8" secondAttribute="bottom" id="x7m-43-LTy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="LlH-WK-y1X" id="ad4-kb-0j4"/>
+                        <outlet property="textbox1" destination="taI-1J-rYI" id="MOU-Op-rs8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="146"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="1024" height="1024"/>
+        <image name="noun_Cat_159325" width="1200" height="1200"/>
+        <image name="noun_Home_1929683" width="1200" height="1200"/>
+        <image name="noun_Playstation 4 Control_1914407" width="1200" height="1200"/>
+        <image name="noun_person_924847" width="1200" height="1200"/>
+    </resources>
+</document>
